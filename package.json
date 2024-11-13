@@ -1,0 +1,17 @@
+{
+    "name": "project-name",
+    "version": "1.0.0",
+    "type": "commonjs",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/main.js"
+    },
+    "devDependencies": {
+        "typescript": "^4.9.5"
+    },
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

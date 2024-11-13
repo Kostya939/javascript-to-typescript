@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const addToCart_js_1 = require("./functions/addToCart.js");
+const calculateTotal_js_1 = require("./functions/calculateTotal.js");
+const testData_js_1 = require("./test/testData.js");
+const electronicsCart = (0, addToCart_js_1.addToCart)([], testData_js_1.electronics[0], 2);
+const clothingCart = (0, addToCart_js_1.addToCart)([], testData_js_1.clothing[0], 1);
+console.log('Кошик з електронікою:', electronicsCart);
+console.log('Кошик з одягом:', clothingCart);
+const totalElectronics = (0, calculateTotal_js_1.calculateTotal)(electronicsCart);
+console.log('Загальна вартість електроніки:', totalElectronics);
+const totalClothing = (0, calculateTotal_js_1.calculateTotal)(clothingCart);
+console.log('Загальна вартість одягу:', totalClothing);
